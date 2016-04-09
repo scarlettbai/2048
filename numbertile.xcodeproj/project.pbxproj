@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FCE069A1CB9380400A781C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE06991CB9380400A781C4 /* AppDelegate.swift */; };
+		1FCE069C1CB9380400A781C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE069B1CB9380400A781C4 /* ViewController.swift */; };
+		1FCE069F1CB9380400A781C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCE069D1CB9380400A781C4 /* Main.storyboard */; };
+		1FCE06A11CB9380400A781C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FCE06A01CB9380400A781C4 /* Assets.xcassets */; };
+		1FCE06A41CB9380400A781C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCE06A21CB9380400A781C4 /* LaunchScreen.storyboard */; };
+		1FCE06AF1CB9380400A781C4 /* numbertileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE06AE1CB9380400A781C4 /* numbertileTests.swift */; };
+		1FCE06BA1CB9380400A781C4 /* numbertileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE06B91CB9380400A781C4 /* numbertileUITests.swift */; };
+		1FCE06C91CB9399300A781C4 /* NumbertailGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE06C81CB9399300A781C4 /* NumbertailGameController.swift */; };
+		1FCE06CC1CB939CF00A781C4 /* GamebordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE06CB1CB939CF00A781C4 /* GamebordView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FCE06AB1CB9380400A781C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FCE068E1CB9380400A781C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FCE06951CB9380400A781C4;
+			remoteInfo = numbertile;
+		};
+		1FCE06B61CB9380400A781C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FCE068E1CB9380400A781C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FCE06951CB9380400A781C4;
+			remoteInfo = numbertile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1FCE06961CB9380400A781C4 /* numbertile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = numbertile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FCE06991CB9380400A781C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1FCE069B1CB9380400A781C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1FCE069E1CB9380400A781C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1FCE06A01CB9380400A781C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FCE06A31CB9380400A781C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1FCE06A51CB9380400A781C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FCE06AA1CB9380400A781C4 /* numbertileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = numbertileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FCE06AE1CB9380400A781C4 /* numbertileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numbertileTests.swift; sourceTree = "<group>"; };
+		1FCE06B01CB9380400A781C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FCE06B51CB9380400A781C4 /* numbertileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = numbertileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FCE06B91CB9380400A781C4 /* numbertileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = numbertileUITests.swift; sourceTree = "<group>"; };
+		1FCE06BB1CB9380400A781C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FCE06C81CB9399300A781C4 /* NumbertailGameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumbertailGameController.swift; sourceTree = "<group>"; };
+		1FCE06CB1CB939CF00A781C4 /* GamebordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamebordView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FCE06931CB9380400A781C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FCE06A71CB9380400A781C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FCE06B21CB9380400A781C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FCE068D1CB9380400A781C4 = {
+			isa = PBXGroup;
+			children = (
+				1FCE06981CB9380400A781C4 /* numbertile */,
+				1FCE06AD1CB9380400A781C4 /* numbertileTests */,
+				1FCE06B81CB9380400A781C4 /* numbertileUITests */,
+				1FCE06971CB9380400A781C4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FCE06971CB9380400A781C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FCE06961CB9380400A781C4 /* numbertile.app */,
+				1FCE06AA1CB9380400A781C4 /* numbertileTests.xctest */,
+				1FCE06B51CB9380400A781C4 /* numbertileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FCE06981CB9380400A781C4 /* numbertile */ = {
+			isa = PBXGroup;
+			children = (
+				1FCE06CA1CB939C300A781C4 /* view */,
+				1FCE06C71CB9396200A781C4 /* controller */,
+				1FCE06991CB9380400A781C4 /* AppDelegate.swift */,
+				1FCE069B1CB9380400A781C4 /* ViewController.swift */,
+				1FCE069D1CB9380400A781C4 /* Main.storyboard */,
+				1FCE06A01CB9380400A781C4 /* Assets.xcassets */,
+				1FCE06A21CB9380400A781C4 /* LaunchScreen.storyboard */,
+				1FCE06A51CB9380400A781C4 /* Info.plist */,
+			);
+			path = numbertile;
+			sourceTree = "<group>";
+		};
+		1FCE06AD1CB9380400A781C4 /* numbertileTests */ = {
+			isa = PBXGroup;
+			children = (
+				1FCE06AE1CB9380400A781C4 /* numbertileTests.swift */,
+				1FCE06B01CB9380400A781C4 /* Info.plist */,
+			);
+			path = numbertileTests;
+			sourceTree = "<group>";
+		};
+		1FCE06B81CB9380400A781C4 /* numbertileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1FCE06B91CB9380400A781C4 /* numbertileUITests.swift */,
+				1FCE06BB1CB9380400A781C4 /* Info.plist */,
+			);
+			path = numbertileUITests;
+			sourceTree = "<group>";
+		};
+		1FCE06C71CB9396200A781C4 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				1FCE06C81CB9399300A781C4 /* NumbertailGameController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		1FCE06CA1CB939C300A781C4 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1FCE06CB1CB939CF00A781C4 /* GamebordView.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FCE06951CB9380400A781C4 /* numbertile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FCE06BE1CB9380400A781C4 /* Build configuration list for PBXNativeTarget "numbertile" */;
+			buildPhases = (
+				1FCE06921CB9380400A781C4 /* Sources */,
+				1FCE06931CB9380400A781C4 /* Frameworks */,
+				1FCE06941CB9380400A781C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = numbertile;
+			productName = numbertile;
+			productReference = 1FCE06961CB9380400A781C4 /* numbertile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FCE06A91CB9380400A781C4 /* numbertileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FCE06C11CB9380400A781C4 /* Build configuration list for PBXNativeTarget "numbertileTests" */;
+			buildPhases = (
+				1FCE06A61CB9380400A781C4 /* Sources */,
+				1FCE06A71CB9380400A781C4 /* Frameworks */,
+				1FCE06A81CB9380400A781C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FCE06AC1CB9380400A781C4 /* PBXTargetDependency */,
+			);
+			name = numbertileTests;
+			productName = numbertileTests;
+			productReference = 1FCE06AA1CB9380400A781C4 /* numbertileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1FCE06B41CB9380400A781C4 /* numbertileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FCE06C41CB9380400A781C4 /* Build configuration list for PBXNativeTarget "numbertileUITests" */;
+			buildPhases = (
+				1FCE06B11CB9380400A781C4 /* Sources */,
+				1FCE06B21CB9380400A781C4 /* Frameworks */,
+				1FCE06B31CB9380400A781C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FCE06B71CB9380400A781C4 /* PBXTargetDependency */,
+			);
+			name = numbertileUITests;
+			productName = numbertileUITests;
+			productReference = 1FCE06B51CB9380400A781C4 /* numbertileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FCE068E1CB9380400A781C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = white;
+				TargetAttributes = {
+					1FCE06951CB9380400A781C4 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 7UV7W6LK9P;
+					};
+					1FCE06A91CB9380400A781C4 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 1FCE06951CB9380400A781C4;
+					};
+					1FCE06B41CB9380400A781C4 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 1FCE06951CB9380400A781C4;
+					};
+				};
+			};
+			buildConfigurationList = 1FCE06911CB9380400A781C4 /* Build configuration list for PBXProject "numbertile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FCE068D1CB9380400A781C4;
+			productRefGroup = 1FCE06971CB9380400A781C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FCE06951CB9380400A781C4 /* numbertile */,
+				1FCE06A91CB9380400A781C4 /* numbertileTests */,
+				1FCE06B41CB9380400A781C4 /* numbertileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FCE06941CB9380400A781C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FCE06A41CB9380400A781C4 /* LaunchScreen.storyboard in Resources */,
+				1FCE06A11CB9380400A781C4 /* Assets.xcassets in Resources */,
+				1FCE069F1CB9380400A781C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FCE06A81CB9380400A781C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FCE06B31CB9380400A781C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FCE06921CB9380400A781C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FCE069C1CB9380400A781C4 /* ViewController.swift in Sources */,
+				1FCE06CC1CB939CF00A781C4 /* GamebordView.swift in Sources */,
+				1FCE069A1CB9380400A781C4 /* AppDelegate.swift in Sources */,
+				1FCE06C91CB9399300A781C4 /* NumbertailGameController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FCE06A61CB9380400A781C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FCE06AF1CB9380400A781C4 /* numbertileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FCE06B11CB9380400A781C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FCE06BA1CB9380400A781C4 /* numbertileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FCE06AC1CB9380400A781C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FCE06951CB9380400A781C4 /* numbertile */;
+			targetProxy = 1FCE06AB1CB9380400A781C4 /* PBXContainerItemProxy */;
+		};
+		1FCE06B71CB9380400A781C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FCE06951CB9380400A781C4 /* numbertile */;
+			targetProxy = 1FCE06B61CB9380400A781C4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1FCE069D1CB9380400A781C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FCE069E1CB9380400A781C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1FCE06A21CB9380400A781C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FCE06A31CB9380400A781C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FCE06BC1CB9380400A781C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FCE06BD1CB9380400A781C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FCE06BF1CB9380400A781C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = numbertile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.white.numbertile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1FCE06C01CB9380400A781C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = numbertile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.white.numbertile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1FCE06C21CB9380400A781C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = numbertileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.white.numbertileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/numbertile.app/numbertile";
+			};
+			name = Debug;
+		};
+		1FCE06C31CB9380400A781C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = numbertileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.white.numbertileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/numbertile.app/numbertile";
+			};
+			name = Release;
+		};
+		1FCE06C51CB9380400A781C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = numbertileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.white.numbertileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = numbertile;
+			};
+			name = Debug;
+		};
+		1FCE06C61CB9380400A781C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = numbertileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.white.numbertileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = numbertile;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FCE06911CB9380400A781C4 /* Build configuration list for PBXProject "numbertile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FCE06BC1CB9380400A781C4 /* Debug */,
+				1FCE06BD1CB9380400A781C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FCE06BE1CB9380400A781C4 /* Build configuration list for PBXNativeTarget "numbertile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FCE06BF1CB9380400A781C4 /* Debug */,
+				1FCE06C01CB9380400A781C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1FCE06C11CB9380400A781C4 /* Build configuration list for PBXNativeTarget "numbertileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FCE06C21CB9380400A781C4 /* Debug */,
+				1FCE06C31CB9380400A781C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1FCE06C41CB9380400A781C4 /* Build configuration list for PBXNativeTarget "numbertileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FCE06C51CB9380400A781C4 /* Debug */,
+				1FCE06C61CB9380400A781C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FCE068E1CB9380400A781C4 /* Project object */;
+}
