@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FA1193C1CBA44090063E3FD /* ApperanceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA1193B1CBA44090063E3FD /* ApperanceProvider.swift */; };
+		1FB4604A1CB9ECFA0051FC33 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB460491CB9ECFA0051FC33 /* TileView.swift */; };
+		1FB4604C1CB9FB960051FC33 /* GameModle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB4604B1CB9FB960051FC33 /* GameModle.swift */; };
+		1FB4604F1CB9FDA60051FC33 /* BaseModles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB4604E1CB9FDA60051FC33 /* BaseModles.swift */; };
 		1FCE069A1CB9380400A781C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE06991CB9380400A781C4 /* AppDelegate.swift */; };
 		1FCE069C1CB9380400A781C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE069B1CB9380400A781C4 /* ViewController.swift */; };
 		1FCE069F1CB9380400A781C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCE069D1CB9380400A781C4 /* Main.storyboard */; };
@@ -16,6 +20,7 @@
 		1FCE06BA1CB9380400A781C4 /* numbertileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE06B91CB9380400A781C4 /* numbertileUITests.swift */; };
 		1FCE06C91CB9399300A781C4 /* NumbertailGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE06C81CB9399300A781C4 /* NumbertailGameController.swift */; };
 		1FCE06CC1CB939CF00A781C4 /* GamebordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE06CB1CB939CF00A781C4 /* GamebordView.swift */; };
+		1FCE06CE1CB955F400A781C4 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE06CD1CB955F400A781C4 /* ScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FA1193B1CBA44090063E3FD /* ApperanceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApperanceProvider.swift; sourceTree = "<group>"; };
+		1FB460491CB9ECFA0051FC33 /* TileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
+		1FB4604B1CB9FB960051FC33 /* GameModle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModle.swift; sourceTree = "<group>"; };
+		1FB4604E1CB9FDA60051FC33 /* BaseModles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModles.swift; sourceTree = "<group>"; };
 		1FCE06961CB9380400A781C4 /* numbertile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = numbertile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCE06991CB9380400A781C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FCE069B1CB9380400A781C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +60,7 @@
 		1FCE06BB1CB9380400A781C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FCE06C81CB9399300A781C4 /* NumbertailGameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumbertailGameController.swift; sourceTree = "<group>"; };
 		1FCE06CB1CB939CF00A781C4 /* GamebordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamebordView.swift; sourceTree = "<group>"; };
+		1FCE06CD1CB955F400A781C4 /* ScoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FB4604D1CB9FB9C0051FC33 /* modle */ = {
+			isa = PBXGroup;
+			children = (
+				1FB4604B1CB9FB960051FC33 /* GameModle.swift */,
+				1FB4604E1CB9FDA60051FC33 /* BaseModles.swift */,
+				1FA1193B1CBA44090063E3FD /* ApperanceProvider.swift */,
+			);
+			name = modle;
+			sourceTree = "<group>";
+		};
 		1FCE068D1CB9380400A781C4 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +121,7 @@
 		1FCE06981CB9380400A781C4 /* numbertile */ = {
 			isa = PBXGroup;
 			children = (
+				1FB4604D1CB9FB9C0051FC33 /* modle */,
 				1FCE06CA1CB939C300A781C4 /* view */,
 				1FCE06C71CB9396200A781C4 /* controller */,
 				1FCE06991CB9380400A781C4 /* AppDelegate.swift */,
@@ -143,6 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				1FCE06CB1CB939CF00A781C4 /* GamebordView.swift */,
+				1FCE06CD1CB955F400A781C4 /* ScoreView.swift */,
+				1FB460491CB9ECFA0051FC33 /* TileView.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -279,10 +302,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FA1193C1CBA44090063E3FD /* ApperanceProvider.swift in Sources */,
 				1FCE069C1CB9380400A781C4 /* ViewController.swift in Sources */,
 				1FCE06CC1CB939CF00A781C4 /* GamebordView.swift in Sources */,
+				1FB4604F1CB9FDA60051FC33 /* BaseModles.swift in Sources */,
 				1FCE069A1CB9380400A781C4 /* AppDelegate.swift in Sources */,
 				1FCE06C91CB9399300A781C4 /* NumbertailGameController.swift in Sources */,
+				1FB4604C1CB9FB960051FC33 /* GameModle.swift in Sources */,
+				1FB4604A1CB9ECFA0051FC33 /* TileView.swift in Sources */,
+				1FCE06CE1CB955F400A781C4 /* ScoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +539,7 @@
 				1FCE06C01CB9380400A781C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FCE06C11CB9380400A781C4 /* Build configuration list for PBXNativeTarget "numbertileTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +548,7 @@
 				1FCE06C31CB9380400A781C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FCE06C41CB9380400A781C4 /* Build configuration list for PBXNativeTarget "numbertileUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +557,7 @@
 				1FCE06C61CB9380400A781C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

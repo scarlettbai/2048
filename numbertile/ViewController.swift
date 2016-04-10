@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func setupGame(sender: UIButton) {
-        let game = NumbertailGameController(demension: 4 , threshold: 2048)
+        let game = NumbertailGameController(dimension : 4 , threshold: 2048)
         self.presentViewController(game, animated: true , completion: nil)
     }
 
