@@ -12,6 +12,8 @@ import UIKit
 protocol GameModelProtocol : class {
     func changeScore(score : Int)
     func insertTile(position : (Int , Int), value : Int)
+    func moveOneTile(from: (Int, Int), to: (Int, Int), value: Int)
+    func moveTwoTiles(from: ((Int, Int), (Int, Int)), to: (Int, Int), value: Int)
 }
 
 class NumbertailGameController : UIViewController , GameModelProtocol {
@@ -41,6 +43,112 @@ class NumbertailGameController : UIViewController , GameModelProtocol {
         super.init(nibName: nil, bundle: nil)
         gameModle = GameModle(dimension: dimension , threshold: threshold , delegate: self )
         view.backgroundColor = UIColor(red : 0xE6/255, green : 0xE2/255, blue : 0xD4/255, alpha : 1)
+        setupSwipeConttoller()
+    }
+    
+    func setupSwipeConttoller() {
+        let upSwipe = UISwipeGestureRecognizer(target: self , action: #selector(NumbertailGameController.upCommand(_:)))
+        upSwipe.numberOfTouchesRequired = 1
+        upSwipe.direction = UISwipeGestureRecognizerDirection.Up
+        view.addGestureRecognizer(upSwipe)
+        
+        let downSwipe = UISwipeGestureRecognizer(target: self , action: #selector(NumbertailGameController.downCommand(_:)))
+        downSwipe.numberOfTouchesRequired = 1
+        downSwipe.direction = UISwipeGestureRecognizerDirection.Down
+        view.addGestureRecognizer(downSwipe)
+        
+        let leftSwipe = UISwipeGestureRecognizer(target: self , action: #selector(NumbertailGameController.leftCommand(_:)))
+        leftSwipe.numberOfTouchesRequired = 1
+        leftSwipe.direction = UISwipeGestureRecognizerDirection.Left
+        view.addGestureRecognizer(leftSwipe)
+        
+        let rightSwipe = UISwipeGestureRecognizer(target: self , action: #selector(NumbertailGameController.rightCommand(_:)))
+        rightSwipe.numberOfTouchesRequired = 1
+        rightSwipe.direction = UISwipeGestureRecognizerDirection.Right
+        view.addGestureRecognizer(rightSwipe)
+    }
+    
+    func upCommand(r : UIGestureRecognizer) {
+        let m = gameModle!
+        m.queenMove(MoveDirection.UP , completion: { (changed : Bool) -> () in
+            if  changed {
+                self.followUp()
+            }
+        })
+    }
+    
+    func downCommand(r : UIGestureRecognizer) {
+        let m = gameModle!
+        m.queenMove(MoveDirection.DOWN , completion: { (changed : Bool) -> () in
+            if  changed {
+                self.followUp()
+            }
+        })
+    }
+    
+    func leftCommand(r : UIGestureRecognizer) {
+        let m = gameModle!
+        m.queenMove(MoveDirection.LEFT , completion: { (changed : Bool) -> () in
+            if  changed {
+                self.followUp()
+            }
+        })
+    }
+    
+    func rightCommand(r : UIGestureRecognizer) {
+        let m = gameModle!
+        m.queenMove(MoveDirection.RIGHT , completion: { (changed : Bool) -> () in
+            if  changed {
+                self.followUp()
+            }
+        })
+    }
+    
+    func followUp() {
+        assert(gameModle != nil)
+        let m = gameModle!
+        let (userWon, _) = m.userHasWon()
+        if userWon {
+            // TODO: alert delegate we won
+            let winAlertView = UIAlertController(title: "結果", message: "你贏了", preferredStyle: UIAlertControllerStyle.Alert)
+            let resetAction = UIAlertAction(title: "重置", style: UIAlertActionStyle.Default, handler: {(u : UIAlertAction) -> () in
+                self.reset()
+            })
+            winAlertView.addAction(resetAction)
+            let cancleAction = UIAlertAction(title: "取消", style: UIAlertActionStyle.Default, handler: nil)
+            winAlertView.addAction(cancleAction)
+            self.presentViewController(winAlertView, animated: true, completion: nil)
+            // TODO: At this point we should stall the game until the user taps 'New Game' (which hasn't been implemented yet)
+            return
+        }
+        
+        // Now, insert more tiles
+        let randomVal = Int(arc4random_uniform(10))
+        m.insertRandomPositoinTile(randomVal == 1 ? 4 : 2)
+        
+        // At this point, the user may lose
+        if m.userHasLost() {
+            // TODO: alert delegate we lost
+            NSLog("You lost...")
+            let lostAlertView = UIAlertController(title: "結果", message: "你輸了", preferredStyle: UIAlertControllerStyle.Alert)
+            let resetAction = UIAlertAction(title: "重置", style: UIAlertActionStyle.Default, handler: {(u : UIAlertAction) -> () in
+                self.reset()
+            })
+            lostAlertView.addAction(resetAction)
+            let cancleAction = UIAlertAction(title: "取消", style: UIAlertActionStyle.Default, handler: nil)
+            lostAlertView.addAction(cancleAction)
+            self.presentViewController(lostAlertView, animated: true, completion: nil)
+        }
+    }
+    
+    func reset() {
+        assert(bord != nil && gameModle != nil)
+        let b = bord!
+        let m = gameModle!
+        b.reset()
+        m.reset()
+        m.insertRandomPositoinTile(2)
+        m.insertRandomPositoinTile(2)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -109,11 +217,10 @@ class NumbertailGameController : UIViewController , GameModelProtocol {
         scoreV = scoreView
         bord = gamebord
         
-        scoreView.scoreChanged(newScore: 13631488)
+        scoreView.scoreChanged(newScore: 0)
         
         assert(gameModle != nil)
         let modle = gameModle!
-        modle.insertRandomPositoinTile(2)
         modle.insertRandomPositoinTile(2)
         modle.insertRandomPositoinTile(2)
         
@@ -133,6 +240,18 @@ class NumbertailGameController : UIViewController , GameModelProtocol {
         assert(bord != nil)
         let b = bord!
         b.insertTile(pos, value: value)
+    }
+    
+    func moveOneTile(from: (Int, Int), to: (Int, Int), value: Int) {
+        assert(bord != nil)
+        let b = bord!
+        b.moveOneTiles(from, to: to, value: value)
+    }
+    
+    func moveTwoTiles(from: ((Int, Int), (Int, Int)), to: (Int, Int), value: Int) {
+        assert(bord != nil)
+        let b = bord!
+        b.moveTwoTiles(from, to: to, value: value)
     }
     
 }
